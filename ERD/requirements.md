@@ -1,1 +1,1 @@
-![image alt](https://github.com/Fmukanda/requirement-analysis/blob/31b2695b3e5049e9b0b78b1d93623383ec80235a/alx-booking-uc.png)
+![image alt](https://github.com/Fmukanda/-alx-airbnb-database/blob/a1eccdd17a62e0dceb1b0612311a946ea218847a/ERD/ERD%20Diagram.drawio.png)
