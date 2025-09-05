@@ -190,3 +190,10 @@ CREATE INDEX idx_property_search_vector ON property USING gin(search_vector);
 ```
 
 ## 4. Performance Improvement Results
+| Query | Before | After | Improvement | 
+| :----- | :-------------- | :----------------- | ----------- |
+|Query 1: User Bookings Dashboard|1200ms execution time|280ms execution time|77% faster|
+|Query 2: Property Search|850ms execution time|150ms execution time|82% faster|
+|Query 3: Date Range Report|2100ms execution time|450ms execution time|79% faster|
+|Query 4: User Activity|600ms execution time|95ms execution time|84% faster|
+|Query 5: Host Dashboard|1800ms execution time|120ms execution time (using materialized view)|93% faster|
