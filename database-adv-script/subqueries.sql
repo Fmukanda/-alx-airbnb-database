@@ -1,6 +1,6 @@
+--CORRELATED SUBQUERY
 -- Purpose: To find properties with high ratings
--- Description: This query finds all properties that have an average review rating of greater than 4.0.
--- It accomplishes this by using a subquery to first identify the property IDs that meet the criteria.
+-- Description: This query finds all properties that have an average review rating of greater than 4.0. It accomplishes this by using a subquery to first identify the property IDs that meet the criteria.
 SELECT
     *
 FROM
@@ -19,6 +19,7 @@ WHERE
     );
 
 
+--NONCORRELATED SUBQUERY
 -- Purpose: To find users with multiple bookings
 -- Description: This query uses a correlated subquery to find all users who have made more than 3 bookings.
 SELECT
