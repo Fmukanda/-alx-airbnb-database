@@ -1,4 +1,4 @@
--- INNER JOIN QUERY
+--INNER JOIN QUERY
 -- - Purpose: Fetch all bookings with user information
 -- - Description: This query retrieves all booking records and joins them with user information.
 -- - Use Case:
@@ -19,7 +19,7 @@ FROM
 INNER JOIN
     "user" AS u ON b.user_id = u.user_id;
 
--- LEFT JOIN QUERY
+--LEFT JOIN QUERY
 -- - Purpose: Retrieve all properties and their reviews, including properties with no reviews
 -- - Description: This query retrieves all property records and joins them with their reviews.
 -- - Use Case:
@@ -37,7 +37,7 @@ FROM
 LEFT JOIN
     review AS r ON p.property_id = r.property_id;
 
--- OUTER JOIN QUERY
+--OUTER JOIN QUERY
 -- - Purpose: Retrieve all users and all bookings, including users without bookings and bookings without users
 -- - Description: This query uses a FULL OUTER JOIN to retrieve all records from both the "user" and "booking" tables.
 -- - Use Case:
