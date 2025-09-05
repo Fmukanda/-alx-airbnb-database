@@ -87,9 +87,4 @@ CREATE TRIGGER trigger_create_booking_partition
     FOR EACH ROW
     EXECUTE FUNCTION create_booking_partition();
 
--- 8. Optional: Replace original table with partitioned table
--- Note: This is a production deployment step - test thoroughly first
-/*
-ALTER TABLE booking RENAME TO booking_old;
-ALTER TABLE booking_partitioned RENAME TO booking;
-*/
+
