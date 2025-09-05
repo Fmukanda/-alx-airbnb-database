@@ -22,3 +22,6 @@ This document explains the indexing decisions for the **User**, **Booking**, and
  - **location:** used in WHERE clauses for location-based filtering
  - **pricepernight :** used in WHERE clauses for price filtering and ORDER BY
  - **created_at:** used in ORDER BY for chronological sorting
+   
+## 2. Creating Database Indexes
+See the [database_index.sql]() file for the specific CREATE INDEX commands.
