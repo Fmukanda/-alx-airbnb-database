@@ -1,6 +1,5 @@
 -- Purpose: Fetch all bookings with user information
 -- Description: This query retrieves all booking records and joins them with user information.
--- It provides a complete view of which user made each booking, including their personal details.
 SELECT
     b.booking_id,
     b.property_id,
@@ -35,4 +34,20 @@ FROM
 LEFT JOIN
     review AS r ON p.property_id = r.property_id;
 
+
+-- Purpose: Retrieve all users and all bookings, including users without bookings and bookings without users
+-- Description: This query uses a FULL OUTER JOIN to retrieve all records from both the "user" and "booking" tables.
+SELECT
+    u.user_id,
+    u.first_name,
+    u.last_name,
+    u.email,
+    b.booking_id,
+    b.property_id,
+    b.start_date,
+    b.end_date
+FROM
+    "user" AS u
+FULL OUTER JOIN
+    booking AS b ON u.user_id = b.user_id;
 
