@@ -18,3 +18,21 @@ FROM
 INNER JOIN
     "user" AS u ON b.user_id = u.user_id;
 
+
+-- Purpose: Retrieve all properties and their reviews, including properties with no reviews
+-- Description: This query retrieves all property records and joins them with their reviews.
+SELECT
+    p.property_id,
+    p.name AS property_name,
+    p.pricepernight,
+    p.location,
+    r.review_id,
+    r.user_id AS reviewer_id,
+    r.rating,
+    r.comment
+FROM
+    property AS p
+LEFT JOIN
+    review AS r ON p.property_id = r.property_id;
+
+
