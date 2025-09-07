@@ -1,6 +1,6 @@
 
 # Sample Data Population for Property Booking Platform
-
+```sql
 -- ==================================================
 -- Users
 -- ==================================================
@@ -75,4 +75,4 @@ VALUES
         (SELECT user_id FROM "user" WHERE email='carol@example.com'),
         (SELECT user_id FROM "user" WHERE email='david@example.com'),
         'Hello David, is parking available at the apartment?');
-
+```
