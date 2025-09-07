@@ -1,5 +1,5 @@
 -- Initial query retrieving all bookings with user, property, and payment details
-
+EXPLAIN ANALYZER
 SELECT 
     b.booking_id,
     b.start_date,
@@ -21,4 +21,5 @@ FROM booking b
 JOIN "user" u ON b.user_id = u.user_id
 JOIN property p ON b.property_id = p.property_id
 LEFT JOIN payment pay ON b.booking_id = pay.booking_id
+WHERE pay.amount > $500 AND p.location = 'Kenya'
 ORDER BY b.created_at DESC;
