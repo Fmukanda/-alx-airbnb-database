@@ -1,5 +1,4 @@
 -- Sample Data Population Script
--- Populate the database with realistic sample data
 
 -- Insert sample users
 INSERT INTO "user" (user_id, first_name, last_name, email, password_hash, phone_number, role, created_at) VALUES
