@@ -1,5 +1,5 @@
 -- Initial query retrieving all bookings with user, property, and payment details
-EXPLAIN ANALYZER
+EXPLAIN ANALYZE
 SELECT 
     b.booking_id,
     b.start_date,
