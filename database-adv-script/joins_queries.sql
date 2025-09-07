@@ -18,6 +18,7 @@ FROM
     booking AS b
 INNER JOIN
     "user" AS u ON b.user_id = u.user_id;
+ORDER BY b.booking_id
 
 --LEFT JOIN QUERY
 -- - Purpose: Retrieve all properties and their reviews, including properties with no reviews
@@ -36,6 +37,7 @@ FROM
     property AS p
 LEFT JOIN
     review AS r ON p.property_id = r.property_id;
+ORDER BY property_name
 
 --OUTER JOIN QUERY
 -- - Purpose: Retrieve all users and all bookings, including users without bookings and bookings without users
@@ -54,4 +56,5 @@ FROM
     "user" AS u
 FULL OUTER JOIN
     booking AS b ON u.user_id = b.user_id;
+ORDER BY u.first_name
 
